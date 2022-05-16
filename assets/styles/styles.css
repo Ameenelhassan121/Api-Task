@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* nav */
+nav .container {
+  text-align: center;
+  padding: 20px;
+}
+nav .container h1 {
+  margin-block: 10px 20px;
+  font-size: 4rem;
+  color: #0095ff;
+}
+
+nav .container form {
+  display: flex;
+  width: 60%;
+  margin-inline: auto;
+}
+nav .container input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid rgb(11, 11, 70);
+}
+
+nav .container input:hover,
+:focus {
+  outline-color: #0095ff;
+}
+/* persons */
+
+.persons .container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+border-bottom: 2px solid black;
+}
+.persons .container .person {
+  box-shadow: 2px 2px 10px 2px;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 46px;
+  border-top: 4px solid transparent;
+  width: 361px;
+}
+.persons .container .person:hover {
+  border-top-color: #0095ff;
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+.persons .container .person .img {
+  margin-inline: auto;
+  width: 150px;
+  height: 138px;
+  box-shadow: 2px 2px 5px 2px;
+  border-radius: 100%;
+  background-position:center ;
+  background-size: cover;
+}
+.persons .container .person h2 {
+  margin-block: 10px;
+  margin-inline: auto;
+}
+.persons .container .person h3 {
+  margin-block: 7px;
+  margin-inline: auto;
+}
+.persons .container .person span {
+  color: #07d3d3;
+  padding-inline: 7px;
+}
+/* companies */
+
+.companies .container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+border-bottom: 2px solid black;
+}
+.companies h1{
+    text-align: center;
+    color: #00ffb391;
+    font-size: 3rem;
+}
+.companies .container .company {
+    box-shadow: 2px 2px 10px 2px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 46px;
+    border-top: 4px solid transparent;
+    width: 361px;
+    transition: 0.3s;
+
+}
+.companies .container .company:hover {
+    transform: translateY(-20px);
+    border-top-color: #00ffb3;
+    transition: 0.3s;
+}
+.companies .container .company .img {
+  margin-inline: auto;
+  width: 198px;
+  height: 181px;
+  box-shadow: 2px 2px 5px 2px;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-block: 90px 0px;
+}
+.companies .container .company:hover .companies .container .company .img{
+  transform: translateY(-20px);
+  transition: .3s;
+}
+.companies .container .company h2{
+  text-align: center;
+  font-size: 2rem;
+  padding-block: 70px 0px;
+  display: block;
+  color: #0095ff;
+}
+.companies .container .company:hover h2 {
+  font-size: 1.5rem;
+  padding-block: 30px 0px;
+  transition: .3s;
+
+}
+.companies .container .company h3 {
+    margin-block: 10px;
+    margin-inline: auto;
+    color: transparent;
+    text-align: center;
+}
+.companies .container .company:hover h3{
+  color: black;
+  transition: .3s;
+}
+.companies .container .company a {
+  margin-block: 10px;
+  margin-inline: auto;
+  color: transparent;
+  text-align: center;
+}
+.companies .container .company:hover a {
+  color: black;
+  transition: .3s;
+}
+
+.companies .container .company h3 {
+    margin-block: 7px;
+}
+.companies .container .company span {
+    color: transparent;
+    padding-inline: 7px;
+    text-align: center;
+
+}
+.companies .container .company:hover span {
+  color: #0095ff;
+  transition: .3s;
+
+}
+
+        /*  Books */
+.Books h1 {
+  text-align: center;
+  margin-block: 10px 20px;
+  font-size: 3rem;
+  color: #ff00d473;
+}
+.Books .container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+border-bottom: 2px solid black;
+
+}
+.Books .container .Book {
+  box-shadow: 2px 2px 10px 2px;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 46px;
+  border-top: 4px solid transparent;
+  width: 361px;
+}
+.Books .container .Book:hover {
+  border-top-color: #0095ff;
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+.Books .container .Book .img {
+  margin-inline: auto;
+  width: 150px;
+  height: 138px;
+  box-shadow: 2px 2px 5px 2px;
+  border-radius: 100%;
+  background-position:center ;
+  background-size: cover;
+}
+.Books .container .Book h2 {
+  margin-block: 10px;
+  text-align: center;
+}
+.Books .container .Book h3 {
+  margin-block: 7px;
+  text-align: center;
+}
+.Books .container .Book span {
+  color: #07d3d3;
+  padding-inline: 7px;
+  text-align: center;
+}
