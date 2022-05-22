@@ -18,7 +18,7 @@ getData1();
 
 function renderPersons(persons) {
   personContainer.innerHTML = "";
-  if (persons.length === 0) personContainer.innerHTML = "<h1>No data</h1>";
+  if (persons.length === 0) personContainer.innerHTML = "<h4> sorry, you didn't search correctly</h4>";
   persons.forEach((person) => {
     personContainer.innerHTML += `
         <div class="person">
