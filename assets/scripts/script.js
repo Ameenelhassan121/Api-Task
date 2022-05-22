@@ -1,11 +1,15 @@
 var personContainer = document.querySelector(".persons .container");
 var companiesContainer = document.querySelector(".companies .container");
 var BooksContainer = document.querySelector(".Books .container");
+let arrSearch = [];
 
 async function getData1() {
   await fetch(`https://fakerapi.it/api/v1/persons?_quantity=20`)
     .then((res) => res.json())
-    .then((data) => renderPersons(data.data))
+    .then((data) => {
+      renderPersons(data.data);
+      arrSearch = data.data;
+    })
     .catch((error) => {
       console.log(error);
     });
@@ -13,6 +17,8 @@ async function getData1() {
 getData1();
 
 function renderPersons(persons) {
+  personContainer.innerHTML = "";
+  if (persons.length === 0) personContainer.innerHTML = "<h1>No data</h1>";
   persons.forEach((person) => {
     personContainer.innerHTML += `
         <div class="person">
@@ -26,8 +32,6 @@ function renderPersons(persons) {
     `;
   });
 }
-
-
 
 async function getData2() {
   await fetch(`https://fakerapi.it/api/v1/companies?_quantity=15`)
@@ -53,7 +57,6 @@ function rendercompanies(companies) {
     `;
   });
 }
- 
 
 async function getData3() {
   await fetch(`https://fakerapi.it/api/v1/books?_quantity=10`)
@@ -78,4 +81,15 @@ function renderBooks(Books) {
     </div>
     `;
   });
+}
+
+// Search Data
+function dataSearch(searchInput) {
+  let value = searchInput.value.toLowerCase();
+  var dataFiltered = arrSearch.filter(
+    (person) =>
+      person.firstname.toLowerCase().includes(value) ||
+      person.lastname.toLowerCase().includes(value)
+  );
+  renderPersons(dataFiltered);
 }
