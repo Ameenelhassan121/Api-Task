@@ -93,3 +93,8 @@ function dataSearch(searchInput) {
   );
   renderPersons(dataFiltered);
 }
+
+// Handle Submition
+function handleSubmit(event) {
+  event.preventDefault();
+}
